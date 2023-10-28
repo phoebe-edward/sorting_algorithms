@@ -38,7 +38,7 @@ void quick_sort_2(int *array, size_t size, int *orig_array, size_t orig_size)
 			i++;
 		}
 	}
-	if (i != size - 1)
+	if (i != size - 1 && array[i] != pivot)
 	{
 		temp = array[i];
 		array[i] = array[size - 1];
